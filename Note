@@ -1,0 +1,30 @@
+1. Lập trình là gì?
+- Viết ra các câu lệnh để máy tính thực hiện 1 nhiệm vụ nào đó
+- Chạy tuần tự từ trên xuống dưới
+- Dùng ngôn ngữ lập trình để viết ra các câu lệnh:
+    - C
+    - Pascal
+    - C++
+    - Java
+    - JavaScript
+    ............
+2. JavaScript?
+    - JavaScript là gì?
+        - Là ngôn lập trình ở phía front-end (bây giờ là cả back-end)
+        - Front-End: Những gì hiển thị ra mà chúng ta thấy (giao diện html, app điện thoại...)
+            - HTML,CSS: Để hiển thị nội trên trang web
+                - JS giúp tăng tương với webpage, điều khiển được nội dung hiển thị trên trang web
+                - JS Xử lý logic các bài toán
+        - Back-End: Những xử lý logic ngầm ở bên dưới 
+         
+    - Tại sao chúng ta lại học JavaScript?
+        - Vì JS dễ học, ngôn ngữ kiểu động
+        - JS tương tác tốt với HTML
+    - Có 3 cách nhúng JS vào HTML
+        - Internal: Nhúng thẻ script vào trong html
+        - External: Nhúng file có đuôi .js và bên trong html
+        - Inline: Viết thẳng js trong html
+    - DOM: Document Object Model
+    Document <=> <html>
+    Document.getElementById
+    Tất cả các thẻ mở thì không có innerText

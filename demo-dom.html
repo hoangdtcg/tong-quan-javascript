@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo-id" style="color: blue;font-size: 20px;">Đây là thẻ P</p>
+    <button onclick="change()">Thay đổi</button>
+    <script>
+        function change(){
+            document.getElementById("demo-id").innerText = "DOM";
+            document.getElementById("demo-id").style.color = "red";
+            document.getElementById("demo-id").style.fontSize = "40px";
+        }
+    </script>
+</body>
+</html>
+
+<!-- 
+    Trỏ đến thẻ html thông qua id bằng câu lệnh document.getElementById("tên id")
+    Thẻ HTML gồm các thuộc tính và giá trị của thuộc tính đó
+    innerText: Đây là thẻ P
+ -->

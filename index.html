@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    form{
+        width: 200px;
+    }
+    input{
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Tính điểm trung bình</legend>
+            <input type="text" id="math" placeholder="Điểm Toán" value="">
+            <input type="text" id="english" placeholder="Điểm Anh">
+            <input type="text" id="literature" placeholder="Điểm Văn">
+            <button type="button" onclick="tinhTrungBinh()">Tính Trung Bình</button>
+            <p>Kết quả:</p>
+            <p id="result">Điểm trung bình ở đây</p>
+        </fieldset>
+    </form>
+    <!-- Hiển thị ảnh -->
+    <input type="text" id="link-anh" placeholder="Nhập link ảnh">
+    <br>
+    <img id='anh' src="" alt="">
+    <button onclick="hienThiAnh()">Hiển thị</button>
+    <script>
+        //Code JavaScript vào đây
+        //Đặt tên theo camel: ngayTrongThang
+        function tinhTrungBinh(){
+            
+            // let diemToan = prompt('Nhập điểm Toán:');
+            // let diemAnh = prompt('Nhập điểm Anh:');
+            // let diemVan = prompt('Nhập điểm Văn:');
+            let diemToan = document.getElementById('math').value;
+            let diemAnh = document.getElementById('english').value;
+            let diemVan = document.getElementById('literature').value;
+            let tong = Number(diemToan) + Number(diemAnh) + Number(diemVan);
+            let trungBinh = tong / 3;
+            // alert('Điểm trung bình:' + trungBinh);
+            document.getElementById('result').innerText = trungBinh;
+        }
+
+        function hienThiAnh(){
+            let link = document.getElementById('link-anh').value;
+            document.getElementById("anh").src = link;
+        }
+
+    </script>
+    <!-- <script src="logic.js"></script> -->
+</body>
+</html>
